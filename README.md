@@ -11,6 +11,7 @@ npx esbuild-boilerplate my-project
 ## Commands
 
 | command | description |
+|---|---|
 | `npm run dev` | Run local server |
 | `npm run build` | Generate build |
 | `npm run lint` | Lint src files |
