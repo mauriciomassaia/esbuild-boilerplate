@@ -1,0 +1,25 @@
+{
+  "name": "esbuild-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate app using esbuild and eslint.",
+  "scripts": {
+    "build": "node ./esbuild.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "dev": "node ./esbuild.js --dev"
+  },
+  "keywords": [],
+  "author": "mauriciomassaia",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.14.42"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "bin": {
+    "esbuild-boilerplate": "./generate.js"
+  }
+}

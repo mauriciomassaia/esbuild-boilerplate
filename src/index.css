@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5 Roboto Mono, Arial;
+  background-color: #fff;
+}
+
+.hello {
+  padding: 2rem;
+  font-size: 2rem;
+  color: rgb(244, 40, 135);
+}
