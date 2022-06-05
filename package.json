@@ -8,7 +8,11 @@
     "lint:fix": "eslint ./src --fix",
     "dev": "node ./esbuild.js --dev"
   },
-  "keywords": [],
+  "keywords": [
+    "boilerplate",
+    "esbuild",
+    "eslint"
+  ],
   "author": "mauriciomassaia",
   "license": "ISC",
   "dependencies": {
@@ -20,6 +24,16 @@
     "eslint-plugin-import": "^2.26.0"
   },
   "bin": {
-    "esbuild-boilerplate": "./bin/generate.js"
+    "esbuild-boilerplate": "./generate.js"
+  },
+  "files": [
+    "./generate.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauriciomassaia/esbuild-boilerplate.git"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
