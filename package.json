@@ -20,6 +20,6 @@
     "eslint-plugin-import": "^2.26.0"
   },
   "bin": {
-    "esbuild-boilerplate": "./generate.js"
+    "esbuild-boilerplate": "./bin/generate.js"
   }
 }
