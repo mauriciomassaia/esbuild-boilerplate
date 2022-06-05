@@ -1,6 +1,6 @@
 {
   "name": "esbuild-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Boilerplate app using esbuild and eslint.",
   "scripts": {
     "build": "node ./esbuild.js",
