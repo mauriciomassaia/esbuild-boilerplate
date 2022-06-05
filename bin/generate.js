@@ -33,12 +33,21 @@ async function main() {
 
     process.chdir(projectPath);
 
+    const packFile = fs.readFileSync('./package.json');
+
+    const packObj = JSON.parse(packFile);
+
+    // remove bin property as it will not be needed in the app
+    delete packObj.bin;
+
+    fs.writeFileSync('./package.json', JSON.stringify(packObj, null, 2));
+
     console.log('Installing dependencies...');
     execSync('npm install');
 
     console.log('Removing useless files');
     execSync('npx rimraf ./.git');
-    fs.rmdirSync(path.join(projectPath, 'bin'), { recursive: true });
+    fs.rmSync(path.join(projectPath, 'bin'), { recursive: true });
 
     console.log('The installation is done, this is ready to use !');
   } catch (error) {
